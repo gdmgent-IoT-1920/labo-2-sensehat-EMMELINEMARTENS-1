@@ -91,7 +91,7 @@ mariojump = [
 while True:
   event = s.stick.wait_for_event(event.direction_up)
   if event.direction == 'up':
-    s.set_pixels(mario)
-    time.sleep(0.2)
     s.set_pixels(mariojump)
+    time.sleep(0.2)
+    s.set_pixels(mario)
     
